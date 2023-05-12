@@ -36,6 +36,3 @@ keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<CR>")
 -- Buffer line
 keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<s-Tab>", ":BufferLineCyclePrev<CR>")
-
--- Buffer (outline plugin)
-keymap.set("n", "<leader>o", ":BSOpen<CR>")

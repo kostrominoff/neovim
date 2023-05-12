@@ -54,7 +54,6 @@ require("lazy").setup({
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
-	{ "Djancyp/outline" },
 	{ "nvim-lualine/lualine.nvim" },
 	{
 		"glepnir/dashboard-nvim",
