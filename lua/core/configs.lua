@@ -29,7 +29,7 @@ vim.opt.splitright = true
 vim.opt.clipboard = "unnamedplus"
 
 -- Shorter messages
--- vim.opt.shortmess:append("c")
+vim.opt.shortmess:append("c")
 
 -- Indent Settings
 vim.opt.expandtab = true

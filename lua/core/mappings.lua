@@ -19,7 +19,7 @@ keymap.set("v", "<A-k>", ":m '<-2<CR>gv-gv")
 
 -- Splits
 keymap.set("n", "|", ":vsplit<CR>")
-keymap.set("n", '\\', ":split<CR>")
+keymap.set("n", "\\", ":split<CR>")
 
 -- Navigation
 keymap.set("n", "<c-k>", ":wincmd k<CR>")
