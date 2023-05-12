@@ -3,7 +3,7 @@ vim.wo.relativenumber = true
 
 vim.o.laststatus = 3
 vim.g.formatoptions = "qrn1"
--- vim.opt.showmode = false
+vim.opt.fillchars = { eob = " " }
 vim.opt.updatetime = 100
 vim.wo.signcolumn = "yes"
 vim.opt.scrolloff = 8
