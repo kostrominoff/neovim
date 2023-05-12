@@ -60,4 +60,8 @@ require("lazy").setup({
 		"glepnir/dashboard-nvim",
 		event = "VimEnter",
 	},
+	{
+		"jay-babu/mason-null-ls.nvim",
+		event = { "BufWritePre", "BufNewFile" },
+	},
 })
