@@ -63,4 +63,5 @@ require("lazy").setup({
 		"jay-babu/mason-null-ls.nvim",
 		event = { "BufWritePre", "BufNewFile" },
 	},
+	{ "mrjones2014/smart-splits.nvim" },
 })
