@@ -36,3 +36,6 @@ keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<CR>")
 -- Buffer line
 keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<s-Tab>", ":BufferLineCyclePrev<CR>")
+
+-- Todo
+keymap.set("n", "<leader>ft", ":TodoTelescope<CR>")

@@ -3,10 +3,11 @@ local wk = require("which-key")
 wk.register({
 	f = {
 		name = "Find",
-		f = { "Find File" },
-		b = { "Find Buffer" },
-		h = { "Find Help" },
-		w = { "Find Text" },
+		f = { "Find file" },
+		b = { "Find buffer" },
+		h = { "Find help" },
+		w = { "Find text" },
+		t = { "Find todo" },
 	},
 	h = { "No highlight" },
 	q = { "Quit" },
