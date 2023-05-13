@@ -64,4 +64,7 @@ require("lazy").setup({
 		event = { "BufWritePre", "BufNewFile" },
 	},
 	{ "mrjones2014/smart-splits.nvim" },
+	{ "folke/todo-comments.nvim" },
+	{ "andweeb/presence.nvim" },
+	{ "tpope/vim-surround" },
 })
