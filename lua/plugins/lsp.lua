@@ -1,7 +1,3 @@
-local lspconfig = require("lspconfig")
--- lspconfig.tsserver.setup({})
--- lspconfig.emmet_ls.setup({})
-
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
