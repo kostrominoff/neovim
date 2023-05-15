@@ -67,4 +67,5 @@ require("lazy").setup({
 	{ "folke/todo-comments.nvim" },
 	{ "andweeb/presence.nvim" },
 	{ "tpope/vim-surround" },
+	{ "AndrewRadev/tagalong.vim" },
 })
