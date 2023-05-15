@@ -68,4 +68,5 @@ require("lazy").setup({
 	{ "andweeb/presence.nvim" },
 	{ "tpope/vim-surround" },
 	{ "AndrewRadev/tagalong.vim" },
+	{ "folke/neodev.nvim" },
 })
