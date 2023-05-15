@@ -9,6 +9,7 @@ keymap.set("n", "<leader>Q", ":cq<CR>")
 keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 keymap.set("n", "<leader>c", ":bd<CR>")
+keymap.set("i", "jj", "<Esc>")
 
 -- Move lines
 keymap.set("n", "<A-j>", ":m .+1<CR>==")

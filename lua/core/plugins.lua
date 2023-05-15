@@ -69,4 +69,5 @@ require("lazy").setup({
 	{ "tpope/vim-surround" },
 	{ "AndrewRadev/tagalong.vim" },
 	{ "folke/neodev.nvim" },
+	{ "brenoprata10/nvim-highlight-colors" },
 })
