@@ -1,11 +1,15 @@
 # neovim
 
 ## Install
-Install `ripgrep`:
+
+Install `ripgrep` and `lazygit`:
+
 ```
-yay -S ripgrep
+yay -S ripgrep lazygit
 ```
+
 Clone repo:
+
 ```
 git clone https://github.com/kostrominoff/neovim ~/.config/nvim
 ```

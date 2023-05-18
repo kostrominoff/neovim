@@ -28,6 +28,7 @@ wk.register({
 		b = { "Branches" },
 		c = { "Commits" },
 		s = { "Status" },
+		g = { "Lazygit" },
 	},
 	["/"] = { "Toggle comment" },
 }, {

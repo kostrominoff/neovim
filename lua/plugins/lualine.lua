@@ -1,5 +1,5 @@
-require('lualine').setup({
-  options = {
-    theme = "catppuccin-macchiato"
-  }
+require("lualine").setup({
+	options = {
+		theme = "catppuccin-macchiato",
+	},
 })
