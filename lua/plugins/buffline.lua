@@ -11,10 +11,6 @@ require("bufferline").setup({
 			},
 		},
 		diagnostics = "nvim_lsp",
-		indicator = {
-			icon = "",
-			style = "icon",
-		},
 		separator_style = "thin",
 	},
 })
