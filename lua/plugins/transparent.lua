@@ -1,6 +1,6 @@
 require("transparent").setup({
-  extra_groups = {
-    "NormalFloat",
-    "NvimTreeNormal",
-  },
+	extra_groups = {
+		"NormalFloat",
+		"NvimTreeNormal",
+	},
 })
