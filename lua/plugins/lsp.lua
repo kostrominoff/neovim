@@ -7,6 +7,10 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "rounded",
 })
 
+vim.diagnostic.config({
+	float = { border = "rounded" },
+})
+
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 	border = "rounded",
 })
@@ -31,8 +35,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts)
 		vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, opts)
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-		vim.keymap.set("n", "<leader>lf", function()
-			vim.lsp.buf.format({ async = true })
-		end, opts)
+		vim.keymap.set("n", "<leader>lf", function() end, opts)
 	end,
 })

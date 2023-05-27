@@ -70,5 +70,5 @@ require("lazy").setup({
 	{ "AndrewRadev/tagalong.vim" },
 	{ "folke/neodev.nvim" },
 	{ "brenoprata10/nvim-highlight-colors" },
-	{ "jose-elias-alvarez/typescript.nvim" },
+	{ "JoosepAlviste/nvim-ts-context-commentstring" },
 })
