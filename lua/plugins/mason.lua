@@ -3,7 +3,7 @@ local mason_lspconfig = require("mason-lspconfig")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 mason_lspconfig.setup({
-	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html" },
+	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html", "eslint" },
 	automatic_installation = true,
 })
 
