@@ -71,4 +71,5 @@ require("lazy").setup({
 	{ "folke/neodev.nvim" },
 	{ "brenoprata10/nvim-highlight-colors" },
 	{ "JoosepAlviste/nvim-ts-context-commentstring" },
+	{ "phaazon/hop.nvim" },
 })
