@@ -10,6 +10,12 @@ keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 keymap.set("n", "<leader>c", ":bd<CR>")
 keymap.set("i", "jj", "<Esc>")
+keymap.set("n", "<C-a>", "gg<S-v>G")
+keymap.set("n", "x", '"_x')
+
+-- Clipboard
+keymap.set("v", "gy", '"+y')
+keymap.set("v", "gp", '"+p')
 
 -- Move lines
 keymap.set("n", "<A-j>", ":m .+1<CR>==")
