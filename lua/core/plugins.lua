@@ -72,4 +72,12 @@ require("lazy").setup({
 	{ "brenoprata10/nvim-highlight-colors" },
 	{ "JoosepAlviste/nvim-ts-context-commentstring" },
 	{ "phaazon/hop.nvim" },
+	{
+		"glepnir/lspsaga.nvim",
+		event = "LspAttach",
+		dependencies = {
+			{ "nvim-tree/nvim-web-devicons" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	},
 })

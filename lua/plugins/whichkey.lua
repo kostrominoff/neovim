@@ -20,7 +20,6 @@ wk.register({
 		D = { "Buffer diagnostic" },
 		r = { "Rename" },
 		a = { "Code actions" },
-		f = { "Format" },
 		s = { "Symbols" },
 	},
 	g = {
