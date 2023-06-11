@@ -24,8 +24,6 @@ require("lazy").setup({
 	},
 	{ "nvim-treesitter/nvim-treesitter" },
 	{ "neovim/nvim-lspconfig" },
-	{ "catppuccin/nvim" },
-	{ "xiyaowong/transparent.nvim" },
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-buffer" },
 	{ "hrsh7th/cmp-path" },
@@ -80,4 +78,5 @@ require("lazy").setup({
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	},
+  { "ellisonleao/gruvbox.nvim", priority = 1000 }
 })
