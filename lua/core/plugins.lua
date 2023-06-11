@@ -78,5 +78,6 @@ require("lazy").setup({
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	},
-  { "ellisonleao/gruvbox.nvim", priority = 1000 }
+  { "ellisonleao/gruvbox.nvim", priority = 1000 },
+  { "xiyaowong/transparent.nvim" },
 })
