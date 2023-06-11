@@ -7,7 +7,6 @@ require("core.colors")
 -- Plugins
 require("plugins.treesitter")
 require("plugins.lsp")
-require("plugins.transparent")
 require("plugins.cmp")
 require("plugins.mason")
 require("plugins.telescope")
