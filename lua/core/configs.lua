@@ -39,9 +39,9 @@ vim.opt.softtabstop = 2
 vim.opt.smartindent = true
 
 local signs = {
-	Error = " ",
-	Warn = " ",
-	Hint = " ",
+	Error = " ",
+	Warn = " ",
+	Hint = "󰘥 ",
 	Info = " ",
 }
 
