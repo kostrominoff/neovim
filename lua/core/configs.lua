@@ -38,6 +38,9 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.smartindent = true
 
+-- Rust
+vim.g.rustfmt_autosave = 1
+
 local signs = {
 	Error = " ",
 	Warn = " ",
