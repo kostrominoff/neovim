@@ -36,8 +36,8 @@ cmp.setup({
 		end, { "i", "s" }),
 	}),
 	sources = cmp.config.sources({
+    { name = "crates" },
 		{ name = "nvim_lsp" },
-		-- { name = 'vsnip' }, -- For vsnip users.
 		{ name = "luasnip" },
 	}, {
 		{ name = "buffer" },

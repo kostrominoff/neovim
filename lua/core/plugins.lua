@@ -81,4 +81,7 @@ require("lazy").setup({
   { "ellisonleao/gruvbox.nvim", priority = 1000 },
   { "xiyaowong/transparent.nvim" },
   { "rust-lang/rust.vim" },
+  { "mfussenegger/nvim-dap" },
+  { "simrat39/rust-tools.nvim" },
+  { "Saecki/crates.nvim" }
 })
