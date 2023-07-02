@@ -29,6 +29,12 @@ wk.register({
 		s = { "Status" },
 		g = { "Lazygit" },
 	},
+  d = {
+    name = "Debugger",
+    b = { "Toggle breakpoint" },
+    c = { "Continue" },
+    u = { "Toggle UI" },
+  },
 	["/"] = { "Toggle comment" },
 }, {
 	prefix = "<leader>",
