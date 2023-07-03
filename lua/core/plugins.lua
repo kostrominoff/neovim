@@ -83,5 +83,6 @@ require("lazy").setup({
   { "rust-lang/rust.vim" },
   { "mfussenegger/nvim-dap" },
   { "simrat39/rust-tools.nvim" },
-  { "Saecki/crates.nvim" }
+  { "Saecki/crates.nvim" },
+  { "rcarriga/nvim-dap-ui" }
 })
