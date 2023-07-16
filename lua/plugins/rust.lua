@@ -13,15 +13,15 @@ rt.setup({
     capabilities = require("cmp_nvim_lsp").default_capabilities(),
     checkOnSave = {
       allFeatures = true,
-      -- overrideCommand = {
-      --   "cargo",
-      --   "clippy",
-      --   "--workspace",
-      --   "--message-format=json",
-      --   "--all-targets",
-      --   "--all-features",
-      -- },
+      command = "clippy"
     },
+    -- settings = {
+    --   ["rust-analyzer"] = {
+    --     checkOnSave = {
+    --       command = "clippy",
+    --     },
+    --   },
+    -- },
   },
   dap = { adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path) },
 })

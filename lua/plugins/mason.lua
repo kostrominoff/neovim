@@ -2,8 +2,9 @@ require("mason").setup()
 local mason_lspconfig = require("mason-lspconfig")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+-- "eslint"
 mason_lspconfig.setup({
-	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html", "eslint" },
+	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html", },
 	automatic_installation = true,
 })
 
@@ -20,9 +21,9 @@ local null_ls = require("null-ls")
 
 null_ls.setup({
 	sources = {
-    null_ls.builtins.diagnostics.eslint_d.with({
-      extra_args = {"--stdin-filename", ".eslintrc.js"}
-    }),
+    -- null_ls.builtins.diagnostics.eslint_d.with({
+    --   extra_args = {"--stdin-filename", ".eslintrc.js"}
+    -- }),
   },
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
@@ -45,7 +46,7 @@ null_ls.setup({
 
 require("mason-null-ls").setup({
 	ensure_installed = {
-		"eslint_d",
+		-- "eslint_d",
 		"prettierd",
 	},
 	automatic_installation = true,

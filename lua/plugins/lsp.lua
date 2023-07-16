@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>ld", "<Cmd>Lspsaga show_line_diagnostics<CR>")
 -- vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[d", "<Cmd>Lspsaga diagnostic_jump_next<CR>")
 vim.keymap.set("n", "]d", "<Cmd>Lspsaga diagnostic_jump_prev<CR>")
--- vim.keymap.set("n", "<leader>lD", vim.diagnostic.setloclist)
+vim.keymap.set("n", "<leader>lD", vim.diagnostic.setloclist)
 vim.keymap.set("n", "<leader>lD", "<Cmd>Lspsaga show_buf_diagnostics<CR>")
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
