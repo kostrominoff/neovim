@@ -1,20 +1,27 @@
-require("mason").setup()
-local mason_lspconfig = require("mason-lspconfig")
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
--- "eslint"
-mason_lspconfig.setup({
-	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html", },
-	automatic_installation = true,
-})
-
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+require('mason').setup {}
 require("mason-lspconfig").setup_handlers({
 	function(server_name) -- default handler (optional)
 		require("lspconfig")[server_name].setup({
 			capabilities = capabilities,
 		})
 	end,
+})
+
+local mason_lspconfig = require("mason-lspconfig")
+
+-- "eslint"
+mason_lspconfig.setup({
+	ensure_installed = { "lua_ls", "tsserver", "emmet_ls", "cssls", "cssmodules_ls", "html" },
+	automatic_installation = true,
+})
+
+require("mason-null-ls").setup({
+	ensure_installed = {
+		-- "eslint_d",
+		"prettierd",
+	},
+	automatic_installation = true,
+	handlers = {},
 })
 
 local null_ls = require("null-ls")
@@ -42,13 +49,4 @@ null_ls.setup({
 			})
 		end
 	end,
-})
-
-require("mason-null-ls").setup({
-	ensure_installed = {
-		-- "eslint_d",
-		"prettierd",
-	},
-	automatic_installation = true,
-	handlers = {},
 })

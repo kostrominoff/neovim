@@ -9,26 +9,27 @@ local liblldb_path = codelldb_root .. "lldb/lib/liblldb.so"
 
 rt.setup({
   server = {
+    settings = {
+      ['rust-analyzer'] = {
+        cargo = {
+          autoReload = true
+        },
+        checkOnSave = true,
+      }
+    },
     standalone = true,
     capabilities = require("cmp_nvim_lsp").default_capabilities(),
     checkOnSave = {
       allFeatures = true,
       command = "clippy"
     },
-    -- settings = {
-    --   ["rust-analyzer"] = {
-    --     checkOnSave = {
-    --       command = "clippy",
-    --     },
-    --   },
-    -- },
   },
   dap = { adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path) },
 })
 
 require('crates').setup {
-    null_ls = {
-        enabled = true,
-        name = "crates.nvim",
-    },
+  null_ls = {
+    enabled = true,
+    name = "crates.nvim",
+  },
 }
