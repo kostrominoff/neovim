@@ -12,7 +12,7 @@ require('telescope').setup({
     buffers = {
       mappings = {
         i = {
-          ["<C-x>"] = function(prompt_bufnr)
+          ["<C-c>"] = function(prompt_bufnr)
             local current_picker = action_state.get_current_picker(prompt_bufnr)
             current_picker:delete_selection(function(selection)
               local bufnr = selection.bufnr
